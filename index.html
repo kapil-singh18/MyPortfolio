@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapil Singh Songare • Frontend Developer</title>
+    <meta name="description"
+        content="Portfolio of Kapil Singh Songare — Frontend Developer skilled in HTML, CSS, JavaScript, and learning React. Dark/Light theme, smooth animations, and scroll progress." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-container" aria-hidden="true">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header>
+        <nav class="nav">
+            <div class="brand">Kapil Singh Songare</div>
+            <div class="links" aria-label="Navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="themeToggle" class="btn" aria-label="Toggle dark mode" title="Toggle theme">🌗 Theme</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div>
+            <span class="pill reveal">Frontend Developer</span>
+            <h1 class="title reveal" style="transition-delay:.08s">Hello, I'm Kapil — I build fast, responsive web UIs.
+            </h1>
+            <p class="subtitle reveal" style="transition-delay:.16s">
+                I turn designs into clean, accessible code. I also leverage <strong>Generative AI</strong> to prototype
+                user-friendly, responsive pages quickly using effective prompting.
+            </p>
+            <div class="reveal" style="margin-top:18px; display:flex; gap:12px; transition-delay:.24s">
+                <a href="#projects" class="btn btn-primary">View my work</a>
+                <a class="btn" href="https://www.linkedin.com/in/kapil-singh-songare-a427ba290/" target="_blank"
+                    rel="noreferrer">LinkedIn ↗</a>
+                <a class="btn" href="https://github.com/kapil-singh18" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+        </div>
+        <div class="hero-card reveal" style="transition-delay:.2s">
+            <h3 style="margin:0 0 10px">What I do</h3>
+            <ul style="margin:0; padding-left:18px">
+                <li>Pixel-perfect HTML & modern CSS (Grid/Flex)</li>
+                <li>Accessible, responsive layouts for all screens</li>
+                <li>JavaScript for interactivity & performance</li>
+                <li>React (learning fast via hands-on mini-projects)</li>
+                <li>AI-assisted design to speed up delivery</li>
+            </ul>
+            <div style="margin-top:14px; font-size:14px; color:var(--muted)">
+                <em>Open to internship & freelance opportunities.</em>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="grid" style="grid-template-columns:1fr 1fr; align-items:center">
+            <div class="reveal">
+                <h2>About me</h2>
+                <p>
+                    I'm a front-end developer focused on building smooth, delightful user experiences. I have strong
+                    fundamentals in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and
+                    I'm actively
+                    learning <strong>React</strong> to build scalable components and SPAs. I use Generative AI for
+                    wireframes,
+                    content blocks, and quick UI variants — speeding up iteration while keeping code quality high.
+                </p>
+                <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px">
+                    <a class="btn" href="#skills">My Skills ↓</a>
+                    <a class="btn" href="#projects">Projects ↓</a>
+                    <a class="btn" href="#contact">Contact me ↓</a>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="card" style="display:grid; gap:10px">
+                    <div>
+                        <strong>Currently learning</strong>
+                        <div class="tag">React Components</div>
+                        <div class="tag">Hooks</div>
+                        <div class="tag">State Mgmt</div>
+                    </div>
+                    <div>
+                        <strong>Toolbox</strong>
+                        <div class="tag">VS Code</div>
+                        <div class="tag">Git & GitHub</div>
+                        <div class="tag">Chrome DevTools</div>
+                        <div class="tag">Prompt Engineering</div>
+                    </div>
+                    <div>
+                        <strong>Location</strong>
+                        <div class="tag">India (Remote-friendly)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="reveal">Skills</h2>
+        <div class="grid skills">
+            <div class="card reveal">
+                <h3>HTML5</h3>
+                <p class="muted">Semantic markup, SEO basics, a11y</p>
+            </div>
+            <div class="card reveal">
+                <h3>CSS3/TailwindCSS</h3>
+                <p class="muted">Flexbox, Grid, Animations, Responsive</p>
+            </div>
+            <div class="card reveal">
+                <h3>JavaScript (ES6+)</h3>
+                <p class="muted">DOM, fetch, modules, performance</p>
+            </div>
+            <div class="card reveal">
+                <h3>React (learning)</h3>
+                <p class="muted">Components, hooks, state</p>
+            </div>
+            <div class="card reveal">
+                <h3>UI/UX</h3>
+                <p class="muted">AI-assisted prototyping & flows</p>
+            </div>
+            <div class="card reveal">
+                <h3>Git & DevTools</h3>
+                <p class="muted">Versioning, debugging, audits</p>
+            </div>
+            <div class="card reveal">
+                <h3>C++ Programming</h3>
+                <p class="muted">problem solving</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="reveal">Projects</h2>
+        <div class="grid projects">
+            <!-- Project 1 -->
+            <article class="card project reveal">
+                <div class="cover" role="img" aria-label="Responsive Portfolio preview"></div>
+                <div class="content">
+                    <h3>Tribute WebPage</h3>
+                    <p class="muted">A heartfelt tribute designed with clean HTML & CSS</p>
+                    <div style="display:flex; gap:10px; margin-top:8px">
+                        <a class="btn" href="https://kapil-singh18.github.io/Tribute-WebPage/"
+                            aria-disabled="true">Demo</a>
+                        <a class="btn" href="https://github.com/kapil-singh18/Tribute-WebPage.git" target="_blank"
+                            rel="noreferrer">Code
+                            ↗</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card project reveal">
+                <div class="cover" role="img" aria-label="Online Code Editor preview"></div>
+                <div class="content">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p class="muted">An engaging Tic Tac Toe game featuring interactive UI and clean logic..</p>
+                    <div style="display:flex; gap:10px; margin-top:8px">
+                        <a class="btn" href="https://kapil-singh18.github.io/TicTacToe_Game/"
+                            aria-disabled="true">Demo</a>
+                        <a class="btn" href="https://github.com/kapil-singh18/TicTacToe_Game.git" target="_blank"
+                            rel="noreferrer">Code
+                            ↗</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card project reveal">
+                <div class="cover" role="img" aria-label="Online Code Editor preview"></div>
+                <div class="content">
+                    <h3>Lotus Wak</h3>
+                    <p class="muted">Where Flavor Blossoms – Fresh Chinese flavours, modern twist</p>
+                    <div style="display:flex; gap:10px; margin-top:8px">
+                        <a class="btn" href="https://kapil-singh18.github.io/Lotus-Wok/" aria-disabled="true">Demo</a>
+                        <a class="btn" href="https://github.com/kapil-singh18/Lotus-Wok.git" target="_blank"
+                            rel="noreferrer">Code
+                            ↗</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="card project reveal">
+                <div class="cover" role="img" aria-label="Habit Tree App preview"></div>
+                <div class="content">
+                    <h3>VirtuTeach</h3>
+                    <p class="muted">Calls. Coding. Whiteboards [HTML, TailwindCSS, JS, APIs</p>
+                    <div style="display:flex; gap:10px; margin-top:8px">
+                        <a class="btn" href="https://kapil-singh18.github.io/VirtuTeach/" aria-disabled="true">Demo</a>
+                        <a class="btn" href="https://github.com/kapil-singh18/VirtuTeach.git" target="_blank"
+                            rel="noreferrer">Code
+                            ↗</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Project 5 -->
+            <article class="card project reveal">
+                <div class="cover" role="img" aria-label="Habit Tree App preview"></div>
+                <div class="content">
+                    <h3>My Portfolio</h3>
+                    <p class="muted">Modern Developer Showcase – built with HTML, CSS, and JavaScript.</p>
+                    <div style="display:flex; gap:10px; margin-top:8px">
+                        <a class="btn" href="https://kapil-singh18.github.io/MyPortfolio/" aria-disabled="true">Demo</a>
+                        <a class="btn" href="https://github.com/kapil-singh18/MyPortfolio.git" target="_blank"
+                            rel="noreferrer">Code
+                            ↗</a>
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact-grid grid">
+            <div class="reveal">
+                <h2>Contact</h2>
+                <p>Have an opportunity or want to collaborate? Send a message — I'll reply quickly.</p>
+                <form action="https://formspree.io/f/your-id" method="POST"
+                    onsubmit="alert('Demo form — connect your provider!');">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+            </div>
+            <div class="reveal">
+                <div class="card">
+                    <h3>Links</h3>
+                    <p class="muted">Find me on the web</p>
+                    <div class="social" style="margin-top:6px">
+                        <a href="https://github.com/kapil-singh18" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/kapil-singh-songare-a427ba290/" target="_blank"
+                            rel="noreferrer">LinkedIn</a>
+                    </div>
+                    <div style="margin-top:12px">
+                        <a class="btn" href="#"
+                            onclick="alert('Attach your PDF resume URL here'); return false;">Download Résumé</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section
+            style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center">
+            <small>© <span id="year"></span> Kapil Singh Songare. All rights reserved.</small>
+            <small>Built with ❤︎ using HTML, CSS & JS.</small>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
